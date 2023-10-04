@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Converter</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Emoji Generator</title>
 </head>
 <body>
     <header>
-        <h1>Header</h1>
+        <p class="logo">Logo</p>
+        <h1>Emoji Generator</h1>
     </header>
     <main>
-        <div>
-            <h1>Input</h1>
-            <input type="text" id="insert-link">
-            <button id="convert-btn">Convert Button</button>
-            <h2>PDF will download to user's computer.</h2>
+        <div id="emoji-input">
+            <div id="genResults">Emoji Generator Result</div>
+            <button class="buttons" id="genBtn">Generate</button>
+            <div id="options">
+                <label for="parameter1">Parameter 1</label>
+                <input type="checkbox" id="parameter1">
+                <label for="parameter2">Parameter 2</label>
+                <input type="checkbox" id="parameter2">
+                <label for="parameter3">Paramater 3</label>
+                <input type="checkbox" id="parameter3">
+                <label for="parameter4">Parameter 4</label>
+                <input type="checkbox" id="parameter4">
+            </div>
         </div>
-        <div>
-            <h1>Output</h1>
-            <button id="save-btn">Save PDF</button>
+        <div id="history">
+            <h2>Emoji Generator History</h2>
         </div>
     </main>
+    <script href="./assets/script.js"></script>
 </body>
 </html>
