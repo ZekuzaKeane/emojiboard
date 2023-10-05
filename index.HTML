@@ -4,31 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Emoji Generator</title>
 </head>
 <body>
     <header>
-        <p class="logo">Logo</p>
-        <h1>Emoji Generator</h1>
     </header>
-    <main>
-        <div id="emoji-input">
-            <div id="genResults">Emoji Generator Result</div>
-            <button class="buttons" id="genBtn">Generate</button>
-            <div id="options">
-                <label for="parameter1">Parameter 1</label>
-                <input type="checkbox" id="parameter1">
-                <label for="parameter2">Parameter 2</label>
-                <input type="checkbox" id="parameter2">
-                <label for="parameter3">Paramater 3</label>
-                <input type="checkbox" id="parameter3">
-                <label for="parameter4">Parameter 4</label>
-                <input type="checkbox" id="parameter4">
+    <main class="is-flex is-justify-content-center">
+        <div class="box container m-5 p-5">
+            <div class="is-flex" id="emoji-input">
+                <div class="column is-flex is-flex-direction-column is-align-items-center" id="options">
+                    <button class="buttons button is-dark" id="genBtn">Generate</button>
+                    <div class="is-flex is-flex-direction-column is-align-items-center p-5">
+                        <label for="parameter1">Parameter 1</label>
+                        <input class="checkbox" type="checkbox" id="parameter1">
+                        <label for="parameter2">Parameter 2</label>
+                        <input class="checkbox" type="checkbox" id="parameter2">
+                        <label for="parameter3">Parameter 3</label>
+                        <input class="checkbox" type="checkbox" id="parameter3">
+                        <label for="parameter4">Parameter 4</label>
+                        <input class="checkbox" type="checkbox" id="parameter4">
+                        <label for="parameter5">Parameter 5</label>
+                        <input class="checkbox" type="checkbox" id="parameter5">
+                        <label for="parameter6">Parameter 6</label>
+                        <input class="checkbox" type="checkbox" id="parameter6">
+                    </div>
+                </div>
+                <div class="column is-flex is-flex-direction-column is-align-items-center">
+                    <div id="genResults">Emoji Generator Result</div>
+                    <div class="column" id="history">
+                </div>
             </div>
-        </div>
-        <div id="history">
-            <h2>Emoji Generator History</h2>
         </div>
     </main>
     <script href="./assets/script.js"></script>
