@@ -1,39 +1,56 @@
-// This is just a code for a place to start
 var genButton = $("#genBtn");
-var checkedEl = $('input:checked');
+var image = $("#imageResults")
 var tiles = $('#parameter1');
 var tileSize = $('#parameter2');
-var r = $('#parameter3');
-var g = $('#parameter4');
-var b = $('#parameter5');
+var genResults = $('#genResults');
+var red = $('#parameter3');
+var blue = $('#parameter4');
+var green = $('#parameter5');
+var numTiles = $('#parameter1');
+var tSize = $('#parameter2');
 
-function getApi() {
-  var backgroundApi = `https://php-noise.com/noise.php?r=${r}&g=${g}&b=${b}&tiles=${tiles}&tileSize=${tileSize}&json`;
-  var emojiApi = 'https://emojihub.yurace.pro/api/random/category/smileys-and-people';
+genButton.on('click', getApi);
+
+function getApi(event) {
+ event.preventDefault()
+  var r = red.val();
+  var b = blue.val();
+  var g = green.val();
+  var tiles = numTiles.val();
+  var tileSize = tSize.val();
+  var backgroundApi = `https://php-noise.com/noise.php?r=${r}&g=${g}&b=${b}&tiles=${tiles}&tileSize=${tileSize}&json`; 
   
   fetch(backgroundApi)
   .then(function (response) {
+    console.log(response.status)
+    console.log(response)
     return response.json();
   })
   .then(function (data) {
-    for (var i = 0; i < data.length; i++) {
-      console.log("Test");
-    }
-  });
-
-  fetch(emojiApi)
-  .then(function (response) {
-    return response.json();
+    var imageResults = document.getElementById('imageResults');
+    imageResults.src = data.uri;
   })
-  .then(function (data) {
-    for (var i = 0; i < data.length; i++) {
-      console.log("Test2");
-    }
+.catch(function (error) {
+    console.error('Error:', error);
   });
-  generateParameters();
-}
+    
+  getEmojiApi();
+};
 
-function generateParameters() {
+function getEmojiApi() {
+  var emojiApi = 'https://emojihub.yurace.pro/api/random/category/smileys-and-people'
   
-}
-genButton.on('click', getApi);
+  fetch(emojiApi)
+    .then(function (response) {
+    console.log(response.status)
+    console.log(response)
+    return response.json();
+  })
+    .then(function(data) {
+      var emojiResults = document.getElementById('emoji');
+      emojiResults.innerHTML = data.htmlCode.join('');
+  })
+  .catch(function(error) {
+      console.error('Error:', error);
+  });
+  }
