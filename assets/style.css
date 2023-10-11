@@ -6,3 +6,18 @@ body {
     background-color: #30a8b8;
 }
 
+#genResults {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+#emoji {
+    position: absolute;
+    text-align: center;
+    left: 35px;
+    top: 15px;
+    font-size: 160px;
+
+}
