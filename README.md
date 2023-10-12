@@ -51,4 +51,4 @@ No license was used for this project
 
 ## Link
 
-![Live Deployment](assets/project1live.png) 
+[EmojiBoard](https://zekuzakeane.github.io/emojiboard/)
