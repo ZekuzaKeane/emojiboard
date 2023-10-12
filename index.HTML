@@ -15,24 +15,24 @@
         <div class="box container m-5 p-5">
             <div class="is-flex" id="emoji-input">
                 <div class="column is-flex is-flex-direction-column is-align-items-center" id="options">
-                    <button class="buttons button is-dark" id="genBtn">Generate</button>
                     <h2 class="is-hidden">! Invalid Parameters !</h2>
                     <div class="is-flex is-flex-direction-row is-align-items-center p-5">
                         <label for="parameter1">Number of Tiles</label>
-                        <input class="textbox m-2" type="textbox" id="parameter1" placeholder="1-50">
+                        <input class="textbox m-2" id="parameter1" type="number" min="43" max="50" default="random" placeholder="43-50">
                         <label for="parameter2">Tile Size</label>
-                        <input class="textbox m-2" type="textbox" id="parameter2" placeholder="px">
+                        <input class="textbox m-2" id="parameter2" type="number" min="6" max="20" default="random" placeholder="6-20">
                     </div>
                     <div class="is-flex is-flex-direction-row is-align-items-center p-5">
                         <label for="parameter3">Red Value</label>
-                        <input class="textbox m-2" type="textbox" id="parameter3" placeholder="0-255">
+                        <input class="textbox m-2" id="parameter3" type="number" min="0" max="255" default="random" placeholder="0-255">
                         <label for="parameter4">Blue Value</label>
-                        <input class="textbox m-2" type="textbox" id="parameter4" placeholder="0-255">
+                        <input class="textbox m-2" id="parameter4" type="number" min="0" max="255" default="random" placeholder="0-255">
                         </div>
                         <div class="is-flex is-flex-direction-row is-align-items-center p-5">
                         <label for="parameter5">Green Value</label>
-                        <input class="textbox m-2" type="textbox" id="parameter5" placeholder="0-255">
+                        <input class="textbox m-2" id="parameter5" type="number" min="0" max="255" default="random" placeholder="0-255">
                         </div>
+                    <button class="buttons button is-dark" id="genBtn">Generate</button>
                 </div>
                
                <!-- Image Container -->
