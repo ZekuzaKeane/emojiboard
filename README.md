@@ -12,22 +12,22 @@ There is no installation needed, the whole project runs on the webpage.
 
 Input what you wish into the input boxes
 
-!(./assets/image/screenshot_input)
+!(./assets/image/screenshot_input.png)
 
 After inputing those informations click on generate
 
-!(./assets/image/screenshot_generate)
+!(./assets/image/screenshot_generate.png)
 
 then the emoji will be generated
 
-!(./assets/image/screenshot_result)
+!(./assets/image/screenshot_result.png)
 
 ## Credits
 
-@ZekuzaKeane
-@Lujoffily
-@Ryan9698
-@elijahsatten
+[Zachary Grantz](https://github.com/ZekuzaKeane/) |
+[Luna Joffily](https://github.com/Lujoffily/) |
+[Ryan Caltabiano](https://github.com/Ryan9698/) |
+[Elijah Satten](https://github.com/elijahsatten/)
 
 ## License
 
