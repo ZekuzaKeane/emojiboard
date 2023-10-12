@@ -65,14 +65,9 @@ function displayStorage(event) {
     
     if (backgroundData && emojiData) {
       $('#history').empty()
-      var overFlow = 0
       var storedData = $('<p>').text("Background: " + backgroundData.uri);
       var storedData2 = $('<p>').text("Emoji Unicode: " + emojiData.unicode);
       $('#history').append(storedData);
       $('#history').append(storedData2);
-    }
-
-    if (overFlow >= 2){
-      $('#history').innerHTML
     }
   };
