@@ -41,6 +41,7 @@ function getApi(event) {
 function getEmojiApi() {
 
   var emojiApi = 'https://emojihub.yurace.pro/api/random/category/smileys-and-people'
+
   fetch(emojiApi)
     .then(function (response) {
     console.log(response.status)
