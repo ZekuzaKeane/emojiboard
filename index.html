@@ -13,12 +13,12 @@
     </header>
     <main class="is-flex is-justify-content-center">
         <div class="box container m-5 p-5">
+            <!-- Background Image Parameters -->
             <div class="is-flex" id="emoji-input">
                 <div class="column is-flex is-flex-direction-column is-align-items-center" id="options">
-                    <h2 class="is-hidden">! Invalid Parameters !</h2>
                     <div class="is-flex is-flex-direction-row is-align-items-center p-5">
                         <label for="parameter1">Number of Tiles</label>
-                        <input class="textbox m-2" id="parameter1" type="number" min="43" max="50" default="random" placeholder="43-50">
+                        <input class="textbox m-2" id="parameter1" type="number" min="45" max="50" default="random" placeholder="45-50">
                         <label for="parameter2">Tile Size</label>
                         <input class="textbox m-2" id="parameter2" type="number" min="10" max="20" default="random" placeholder="10-20">
                     </div>
@@ -27,25 +27,27 @@
                         <input class="textbox m-2" id="parameter3" type="number" min="0" max="255" default="random" placeholder="0-255">
                         <label for="parameter4">Blue Value</label>
                         <input class="textbox m-2" id="parameter4" type="number" min="0" max="255" default="random" placeholder="0-255">
-                        </div>
-                        <div class="is-flex is-flex-direction-row is-align-items-center p-5">
+                    </div>
+                    <div class="is-flex is-flex-direction-row is-align-items-center p-5">
                         <label for="parameter5">Green Value</label>
                         <input class="textbox m-2" id="parameter5" type="number" min="0" max="255" default="random" placeholder="0-255">
-                        </div>
+                    </div>
                     <button class="buttons button is-dark" id="genBtn">Generate</button>
                 </div>
                
-               <!-- Image Container -->
+            <!-- Image Containers -->
                 <div class="column is-flex is-flex-direction-column is-align-items-center">
                     <div class="is-flex" id="genResults">
                         <img id="imageResults">
                         <p class="" id="emoji"></p>
                     </div>
+            <!-- Rendered Data (bg link/emoji unicode) -->
                     <div class="column" id="history">
                 </div>
             </div>
         </div>
     </main>
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>
